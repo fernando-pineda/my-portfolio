@@ -1,16 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
+import ContainedNav from "./components/ContainedNav";
 import MyProjects from "./components/MyProjects";
 import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import "./styles/App.css";
 
 function App() {
   return (
-    // <div style={{ backgroundColor: "black" }}>
     <Router>
-      <div style={{ display: "flex", flexDirection: "row" }}>
+      <ContainedNav />
+      <div className="main-container">
         <Nav />
         <Switch>
           <Route exact path="/resume" component={Resume} />
@@ -20,7 +22,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-    // </div>
   );
 }
 

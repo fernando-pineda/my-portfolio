@@ -12,6 +12,7 @@ import {
   addressCard,
 } from "react-icons-kit/fa";
 import { Link } from "react-router-dom";
+import IconButton from "@material-ui/core/IconButton";
 
 export default function Nav() {
   return (
@@ -28,19 +29,30 @@ export default function Nav() {
         </p>
       </div>
       {/* Social media icons row */}
-      <div className="iconList">
-        <a href="https://www.linkedin.com/in/fernando-pineda-a201aa1a6/">
-          {" "}
-          <Icon size="30" icon={linkedinSquare} />{" "}
-        </a>
-        <a href="https://github.com/fernando-pineda/">
-          {" "}
-          <Icon size="30" icon={githubSquare} />{" "}
-        </a>
-        <a href="https://twitter.com/___evo">
-          {" "}
-          <Icon size="30" icon={twitterSquare} />{" "}
-        </a>
+      <div className="icon-list">
+        <IconButton
+          style={{ padding: 5 }}
+          href="https://www.linkedin.com/in/fernando-pineda-a201aa1a6/"
+          aria-label="delete"
+        >
+          <Icon className="btn-color" size="30" icon={linkedinSquare} />
+        </IconButton>
+
+        <IconButton
+          style={{ padding: 5 }}
+          href="https://github.com/fernando-pineda/"
+          aria-label="delete"
+        >
+          <Icon className="btn-color" size="30" icon={githubSquare} />
+        </IconButton>
+
+        <IconButton
+          style={{ padding: 5 }}
+          href="https://twitter.com/___evo"
+          aria-label="delete"
+        >
+          <Icon className="btn-color" size="30" icon={twitterSquare} />
+        </IconButton>
       </div>
       {/* Social media icons row */}
 
