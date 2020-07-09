@@ -7,8 +7,71 @@ import { Icon } from "react-icons-kit";
 import { alignJustify, desktop } from "react-icons-kit/fa";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
+import DevIcon from "devicon-react-svg";
 
 function About() {
+  const renderCards = () => {
+    let data = [
+      {
+        title: "JavaScript",
+        icon: "javascript",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "PHP",
+        icon: "php",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  ",
+      },
+      {
+        title: "HTML",
+        icon: "html5",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "REACT",
+        icon: "react",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "CSS",
+        icon: "css",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "HTML",
+        icon: "html5",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "HTML",
+        icon: "html5",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+      {
+        title: "HTML",
+        icon: "html5",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      },
+    ];
+
+    return data.map((element) => {
+      console.log(element);
+      return (
+        <div className="card-grid">
+          <Card key={element.title} className="card">
+            <CardContent>
+              <DevIcon icon={element.icon} className="icon" />
+              <h1>{element.title}</h1>
+              <p>{element.description}</p>
+              <p>21/08/1999</p>
+            </CardContent>
+          </Card>
+        </div>
+      );
+    });
+  };
+
   const styles = {
     hText: { color: "white", margin: 0 },
   };
@@ -91,28 +154,7 @@ function About() {
           </p>
         </div>
 
-        <div className="card-container">
-          <Card className="card-columns">
-            <CardContent>
-              <h1>Title</h1>
-              <p>Content</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent>
-              <h1>Title</h1>
-              <p>Content</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent>
-              <h1>Title</h1>
-              <p>Content</p>
-            </CardContent>
-          </Card>
-        </div>
+        <div className="card-container">{renderCards()}</div>
       </div>
     </div>
   );
