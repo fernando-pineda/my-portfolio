@@ -15,44 +15,60 @@ import { Link } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
 
 export default function Nav() {
+  const styles = {
+    paragraph: {
+      color: "white",
+      textAlign: "center",
+      fontWeight: "light",
+      fontSize: 18,
+      width: "90%",
+      // backgroundColor: "red",
+      paddingLeft: 10,
+    },
+  };
+
   return (
     <nav className="navContainer">
       {/* Social media, short introduction */}
-      <div className="container">
+      <div className="welcome-container">
         <h1 style={{ color: "white", textAlign: "center" }}>Fernando Pineda</h1>
         <div className="photo-container">
           <img src={navPhoto} className="navPhoto" alt="navPhoto" />
         </div>
-        <p style={{ color: "white", textAlign: "center", fontWeight: "bold" }}>
+        <p style={styles.paragraph}>
           Hi, my name is Fernando and I am a junior software engineer. Welcome
           to my personal website!
         </p>
       </div>
       {/* Social media icons row */}
       <div className="icon-list">
-        <IconButton
-          style={{ padding: 5 }}
-          href="https://www.linkedin.com/in/fernando-pineda-a201aa1a6/"
-          aria-label="delete"
-        >
-          <Icon className="btn-color" size="30" icon={linkedinSquare} />
-        </IconButton>
+        <div className="icons-container">
+          <div className="icons-grid">
+            <IconButton
+              style={{ padding: 5 }}
+              href="https://www.linkedin.com/in/fernando-pineda-a201aa1a6/"
+              aria-label="delete"
+            >
+              <Icon className="btn-color" size="35" icon={linkedinSquare} />
+            </IconButton>
 
-        <IconButton
-          style={{ padding: 5 }}
-          href="https://github.com/fernando-pineda/"
-          aria-label="delete"
-        >
-          <Icon className="btn-color" size="30" icon={githubSquare} />
-        </IconButton>
+            <IconButton
+              style={{ padding: 5 }}
+              href="https://github.com/fernando-pineda/"
+              aria-label="delete"
+            >
+              <Icon className="btn-color" size="35" icon={githubSquare} />
+            </IconButton>
 
-        <IconButton
-          style={{ padding: 5 }}
-          href="https://twitter.com/___evo"
-          aria-label="delete"
-        >
-          <Icon className="btn-color" size="30" icon={twitterSquare} />
-        </IconButton>
+            <IconButton
+              style={{ padding: 5 }}
+              href="https://twitter.com/___evo"
+              aria-label="delete"
+            >
+              <Icon className="btn-color" size="35" icon={twitterSquare} />
+            </IconButton>
+          </div>
+        </div>
       </div>
       {/* Social media icons row */}
 

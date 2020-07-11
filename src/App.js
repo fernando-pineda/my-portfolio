@@ -14,6 +14,7 @@ function App() {
       <ContainedNav />
       <div className="main-container">
         <Nav />
+
         <Switch>
           <Route exact path="/resume" component={Resume} />
           <Route exact path="/projects" component={MyProjects} />

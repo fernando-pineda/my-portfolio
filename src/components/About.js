@@ -7,73 +7,102 @@ import { Icon } from "react-icons-kit";
 import { alignJustify, desktop } from "react-icons-kit/fa";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
-import DevIcon from "devicon-react-svg";
 
 function About() {
+  const styles = {
+    textName: {
+      color: "black",
+      margin: 0,
+      fontSize: 60,
+      fontWeight: "bold",
+      paddingBottom: 20,
+    },
+
+    textRole: { color: "black", margin: 0, fontSize: 30 },
+
+    paragraph: {
+      // textAlign: "justify",
+      fontWeight: "light",
+      fontSize: 22,
+      // backgroundColor: "red",
+    },
+  };
+
   const renderCards = () => {
+    // Icon source: https://konpa.github.io/devicon/
+    // Paste only the class name on the arrays (without the "devicon-")
+
     let data = [
       {
-        title: "JavaScript",
-        icon: "javascript",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "PHP",
-        icon: "php",
+        icons: ["javascript-plain colored"],
+        type: "Front End",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  ",
+          "I've been working with JavaScript since I started my developer career. Enough knowledge of destructuring, promises, try...catch, and so on.   ",
       },
       {
-        title: "HTML",
-        icon: "html5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icons: ["html5-plain colored", "css3-plain colored"],
+        type: "Front End",
+        description:
+          "Clean structure. I've made a project for school with HTML5, CSS3 and Bootstrap.",
       },
       {
-        title: "REACT",
-        icon: "react",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icons: ["react-plain colored"],
+        type: "Front End ",
+        description:
+          "React and React Native. Great understanding and experienced with Hooks.",
       },
       {
-        title: "CSS",
-        icon: "css",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icons: ["bootstrap-plain colored"],
+        type: "Front End",
+        description:
+          "Experienced in using Material-UI, Bootstrap 5, React Bootstrap, React Native Elements.",
       },
       {
-        title: "HTML",
-        icon: "html5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icons: ["nodejs-plain colored", "express-original colored"],
+        type: "Backend",
+        description: "I've used node-express on an unfinished project. ",
       },
       {
-        title: "HTML",
-        icon: "html5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icons: ["php-plain colored"],
+        type: "Backend",
+        description: "Post, get, you know the basics.",
       },
       {
-        title: "HTML",
-        icon: "html5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icons: [
+          "mysql-plain colored",
+          "postgresql-plain colored",
+          "mongodb-plain colored",
+        ],
+        type: "Databases",
+        description:
+          "I've deployed some server-side databases with both postgresql and mysql. Experienced with no-sql databases such as Mongo and Firebase.",
+      },
+      {
+        icons: ["git-plain colored", "github-plain colored"],
+        type: "Version Control",
+        description:
+          "GitHub has been very useful when I wanted to have a strict version control of my projects. ",
       },
     ];
 
-    return data.map((element) => {
-      console.log(element);
+    return data.map((element, index) => {
       return (
-        <div className="card-grid">
-          <Card key={element.title} className="card">
+        <div key={index} className="card-grid">
+          <Card className="card">
             <CardContent>
-              <DevIcon icon={element.icon} className="icon" />
+              <div style={{ display: "flex", flexDirection: "row" }}>
+                {element.icons.map((icon) => {
+                  return <i key={icon} className={`devicon-${icon} icon`}></i>;
+                })}
+              </div>
               <h1>{element.title}</h1>
-              <p>{element.description}</p>
-              <p>21/08/1999</p>
+              <h2>{element.type}</h2>
+              <p style={styles.paragraph}>{element.description}</p>
             </CardContent>
           </Card>
         </div>
       );
     });
-  };
-
-  const styles = {
-    hText: { color: "white", margin: 0 },
   };
 
   return (
@@ -82,9 +111,9 @@ function About() {
 
       <div className="information-container">
         {/* Info */}
-        <div className="container">
-          <h1 style={styles.hText}>Fernando Pineda</h1>
-          <h2 style={styles.hText}>Junior Software Engineer</h2>
+        <div className="information-grid">
+          <p style={styles.textName}>Fernando Pineda</p>
+          <p style={styles.textRole}>Junior Software Engineer</p>
 
           <p className="paragraphs">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie
@@ -101,30 +130,32 @@ function About() {
               <Button
                 variant="contained"
                 color="default"
+                style={{ width: 200 }}
                 startIcon={
-                  <Icon style={{ color: "white" }} size="20" icon={desktop} />
+                  <Icon style={{ color: "black" }} size="20" icon={desktop} />
                 }
                 disableElevation
-                size="small"
+                size="medium"
               >
-                About Me
+                <strong>My Projects</strong>
               </Button>
             </Link>
             <Link className="about-btn" to="/resume">
               <Button
                 variant="contained"
                 color="default"
+                style={{ width: 200 }}
                 startIcon={
                   <Icon
-                    style={{ color: "white" }}
+                    style={{ color: "black" }}
                     size="20"
                     icon={alignJustify}
                   />
                 }
                 disableElevation
-                size="small"
+                size="medium"
               >
-                View Resume
+                <strong>View Resume</strong>
               </Button>
             </Link>
           </div>
@@ -153,8 +184,9 @@ function About() {
             no idea what to do next, so play with it until it dies of shock.
           </p>
         </div>
-
-        <div className="card-container">{renderCards()}</div>
+        <div className="container">
+          <div className="card-container">{renderCards()}</div>
+        </div>
       </div>
     </div>
   );
