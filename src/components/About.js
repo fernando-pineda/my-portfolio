@@ -46,7 +46,7 @@ function About() {
           "Clean structure. I've made a project for school with HTML5, CSS3 and Bootstrap.",
       },
       {
-        icons: ["react-plain colored"],
+        icons: ["react-plain colored", "vuejs-plain-wordmark colored"],
         type: "Front End ",
         description:
           "React and React Native. Great understanding and experienced with Hooks.",
@@ -63,7 +63,7 @@ function About() {
         description: "I've used node-express on an unfinished project. ",
       },
       {
-        icons: ["php-plain colored"],
+        icons: ["php-plain colored", "laravel-plain colored"],
         type: "Backend",
         description: "Post, get, you know the basics.",
       },
@@ -116,13 +116,13 @@ function About() {
           <p style={styles.textRole}>Junior Software Engineer</p>
 
           <p className="paragraphs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie
-            elementum molestie. Donec imperdiet consectetur nisi, ac lacinia
-            nunc ullamcorper non. Pellentesque habitant morbi tristique senectus
-            et netus et malesuada fames ac turpis egestas. Nulla id malesuada
-            nisl. Sed ultrices id orci vitae hendrerit. Morbi quam enim, dapibus
-            id suscipit quis, tincidunt nec orci. Interdum et malesuada fames ac
-            ante ipsum primis in faucibus.
+            I am a <strong>highly motivated</strong> and part self taught
+            Software Engineer who is ready to begin new and fun projects! Very{" "}
+            <strong>careful</strong> and high{" "}
+            <strong>attentive to details</strong>, always looking for{" "}
+            <strong>learn</strong> and <strong>teach</strong> others about what
+            I know at the moment. <strong>Dedicated</strong> and passionate
+            about technology overall.
           </p>
 
           <div className="button-container">
@@ -178,10 +178,16 @@ function About() {
             <h1>What I do</h1>
           </div>
           <p className="paragraphs">
-            Kitty scratches couch bad kitty scratch my tummy actually i hate you
-            now fight me destroy couch as revenge get my claw stuck in the dog's
-            ear, but ask for petting for somehow manage to catch a bird but have
-            no idea what to do next, so play with it until it dies of shock.
+            I have almost one year of experience in whether Front End or
+            backend. I've made several projects with front end technologies, and
+            I have a <strong>good understanding</strong> of backend as well.
+            JavaScript is the language that{" "}
+            <strong>I have more knowledge of</strong>, but I can{" "}
+            <strong>
+              work and adapt myself to think, write and solve problems in the
+              language you request
+            </strong>
+            !
           </p>
         </div>
         <div className="container">

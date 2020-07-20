@@ -10,9 +10,11 @@ import {
   desktop,
   alignJustify,
   addressCard,
+  send,
 } from "react-icons-kit/fa";
 import { Link } from "react-router-dom";
 import IconButton from "@material-ui/core/IconButton";
+import { Button } from "@material-ui/core";
 
 export default function Nav() {
   const styles = {
@@ -78,23 +80,57 @@ export default function Nav() {
 
       <ul className="links-container">
         <Link className="nav-links" to="/about">
-          <Icon size="20" icon={user} />
+          <Icon size="26" icon={user} />
           <li>About Me</li>
         </Link>
         <Link className="nav-links" to="/projects">
-          <Icon size="20" icon={desktop} />
+          <Icon size="26" icon={desktop} />
           <li>Projects</li>
         </Link>
         <Link className="nav-links" to="/resume">
-          <Icon size="20" icon={alignJustify} />
+          <Icon size="26" icon={alignJustify} />
           <li>Resume</li>
         </Link>
         <Link className="nav-links" to="/contact">
-          <Icon size="20" icon={addressCard} />
+          <Icon size="26" icon={addressCard} />
           <li>Contact</li>
         </Link>
       </ul>
 
+      <div
+        style={{
+          width: "100%",
+          flex: 3,
+          display: "flex",
+          // backgroundColor: "blue",
+          flexDirection: "row",
+        }}
+      >
+        <div style={{ paddingTop: 40, paddingLeft: 25 }}>
+          <Button
+            href='  https://api.whatsapp.com/send?phone=9993012963&text="Hey!%20I%27ve%20seen%20your%20portfoilio%20and%20I%20am%20interested%20in%20working%20with%20you!"&source=&data=&app_absent='
+            variant="contained"
+            color="default"
+            style={{ width: 200 }}
+            startIcon={
+              <Icon style={{ color: "black" }} size="20" icon={send} />
+            }
+            disableElevation
+            size="small"
+          >
+            <p
+              style={{
+                fontWeight: "bolder",
+                fontSize: 18,
+                padding: 0,
+                margin: 0,
+              }}
+            >
+              MEET ME
+            </p>
+          </Button>
+        </div>
+      </div>
       {/* Pages nav */}
     </nav>
   );

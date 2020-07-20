@@ -43,6 +43,9 @@
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #e9ecef;
 }
 
 .icons-container {
@@ -217,6 +220,108 @@ li {
 
 /* About styles */
 
+/* MyProjects styles */
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  flex: 5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  /* background-color: seagreen; */
+}
+
+.project-photo-grid {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  /* background-color: red; */
+}
+
+.project-photo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  align-self: center;
+  margin: 10px;
+  flex: 1;
+}
+
+/* MyProjects styles */
+
+/* Resume styles */
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* background-color: red; */
+  flex: 5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* padding: 1rem; */
+  overflow-y: auto;
+}
+
+.cv-preview {
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+  align-self: center;
+  flex: 1;
+}
+
+/* Resume styles */
+
+/* Contact styles */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  flex: 5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow-y: auto;
+}
+
+.contact-form {
+  width: 600px;
+  height: 650;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  align-self: center;
+  flex: 5;
+}
+
+/* Contact styles */
+
+/* ContainedNav styles */
+
+.contained-nav-links {
+  color: black;
+  text-decoration: none;
+  flex-direction: row;
+  display: flex;
+  position: static;
+  overflow: auto;
+  /* background-color: red; */
+}
+
+/* ContainedNav styles */
+
 /* Responsive querys */
 
 @media screen and (max-width: 920px) {
@@ -281,6 +386,10 @@ li {
   .card-grid {
     width: calc(100% * 1 / 3);
   }
+
+  .project-grid {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 920px) {
@@ -304,6 +413,16 @@ li {
   }
   .button-container {
     display: none;
+  }
+
+  .cv-preview {
+    width: 340px;
+  }
+
+  .contact-form {
+    width: 200px;
+    height: 250px;
+    padding-top: 1rem;
   }
 }
 
