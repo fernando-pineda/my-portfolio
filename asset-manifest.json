@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.86af0d8a.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.27078384.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.27078384.chunk.js.map",
+    "runtime-main.js": "/my-portfolio/static/js/runtime-main.c58b4907.js",
+    "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.c58b4907.js.map",
+    "static/css/2.d34346ea.chunk.css": "/my-portfolio/static/css/2.d34346ea.chunk.css",
+    "static/js/2.c420aa64.chunk.js": "/my-portfolio/static/js/2.c420aa64.chunk.js",
+    "static/js/2.c420aa64.chunk.js.map": "/my-portfolio/static/js/2.c420aa64.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "precache-manifest.5025e1874879ed972810b83f820fc63d.js": "/my-portfolio/precache-manifest.5025e1874879ed972810b83f820fc63d.js",
+    "service-worker.js": "/my-portfolio/service-worker.js",
+    "static/css/2.d34346ea.chunk.css.map": "/my-portfolio/static/css/2.d34346ea.chunk.css.map",
+    "static/css/main.86af0d8a.chunk.css.map": "/my-portfolio/static/css/main.86af0d8a.chunk.css.map",
+    "static/js/2.c420aa64.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.c420aa64.chunk.js.LICENSE.txt",
+    "static/media/CV_Preview.png": "/my-portfolio/static/media/CV_Preview.87b9d4da.png",
+    "static/media/Fernando_Pineda_CV.pdf": "/my-portfolio/static/media/Fernando_Pineda_CV.b1b551d2.pdf",
+    "static/media/Fernando_Pineda_Cover_Letter.docx": "/my-portfolio/static/media/Fernando_Pineda_Cover_Letter.39e416dd.docx",
+    "static/media/aboutPhoto.jpg": "/my-portfolio/static/media/aboutPhoto.db3db5db.jpg",
+    "static/media/movienator_1.jpeg": "/my-portfolio/static/media/movienator_1.2a2051ec.jpeg",
+    "static/media/movienator_3.jpeg": "/my-portfolio/static/media/movienator_3.985ce36c.jpeg",
+    "static/media/navPhoto.jpg": "/my-portfolio/static/media/navPhoto.8568c4dc.jpg",
+    "static/media/portfolio.png": "/my-portfolio/static/media/portfolio.a427a40e.png",
+    "static/media/videogameDataSearch.png": "/my-portfolio/static/media/videogameDataSearch.f3fd9986.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c58b4907.js",
+    "static/css/2.d34346ea.chunk.css",
+    "static/js/2.c420aa64.chunk.js",
+    "static/css/main.86af0d8a.chunk.css",
+    "static/js/main.27078384.chunk.js"
+  ]
+}
