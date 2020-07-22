@@ -1,8 +1,6 @@
-@media (max-width: 755px) {
-  #left,
-  #right {
-    flex-basis: auto;
-  }
+body,
+html {
+  position: fixed;
 }
 
 .main-container {
