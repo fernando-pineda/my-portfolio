@@ -1,3 +1,8 @@
+main > div:first-child {
+  -webkit-flex: 0;
+  flex-shrink: 0;
+}
+
 .main-container {
   padding: 15px;
   min-height: 95vh;
