@@ -1,6 +1,9 @@
-main > div:first-child {
-  -webkit-flex: 0;
-  flex-shrink: 0;
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+.parent .child {
+  flex: 0 1 auto;
 }
 
 .main-container {
