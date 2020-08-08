@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/App.css";
 import Mov1 from "../assets/movienator_1.jpeg";
 import Mov2 from "../assets/movienator_3.jpeg";
+import W1 from "../assets/wayNene_1.jpeg";
+import W2 from "../assets/wayNene_2.jpeg";
 import Portfolio from "../assets/portfolio.png";
 import VDS from "../assets/videogameDataSearch.png";
 import { Button } from "@material-ui/core";
@@ -56,7 +58,7 @@ function MyProjects() {
         githubPage: "https://github.com/fernando-pineda/qr-waynene",
       },
       {
-        images: [Mov1, Mov2],
+        images: [W1, W2],
         backgroundColor: "#e9ecef",
         date: "April - Currently in development",
         title: "Movienator",
