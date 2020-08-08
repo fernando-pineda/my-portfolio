@@ -121,8 +121,8 @@ function About() {
             <strong>careful</strong> and high{" "}
             <strong>attentive to details</strong>, always looking for{" "}
             <strong>learn</strong> and <strong>teach</strong> others about what
-            I know at the moment. <strong>Dedicated</strong> and passionate
-            about technology overall.
+            I know at the moment. <strong>Dedicated</strong>, passionate
+            about technology overall and a video game enthusiast.
           </p>
 
           <div className="button-container">
