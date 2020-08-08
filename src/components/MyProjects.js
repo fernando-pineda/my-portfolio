@@ -42,7 +42,7 @@ function MyProjects() {
         githubPage: "https://github.com/fernando-pineda/my-portfolio",
       },
       {
-        images: [Mov1, Mov2],
+        images: [W1, W2],
         backgroundColor: "white",
         date: "June - July 2020",
         title: "WayNené - Recorre la ciudad de Mérida",
@@ -58,7 +58,7 @@ function MyProjects() {
         githubPage: "https://github.com/fernando-pineda/qr-waynene",
       },
       {
-        images: [W1, W2],
+        images: [Mov1, Mov2],
         backgroundColor: "#e9ecef",
         date: "April - Currently in development",
         title: "Movienator",
